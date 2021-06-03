@@ -1,26 +1,18 @@
+
 <!DOCTYPE html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>DS Bootcamp 2021 Practice Site</title>
     <style>
         body {
             margin:0; 
         }
-        h1  {
-            font-family:'Courier New';
-        }
-        h2  {
-            font-family:'Courier New';
-        }
-        h3 {
-            font-family:'Courier New';
-        }
+            
         p  {
             font-family:'Courier New';
         }
         .section1   {
-            width:100vw;
-            height:50vh;
             background-image:url("https://99designs-blog.imgix.net/blog/wp-content/uploads/2020/04/attachment_116382974-scaled-e1586179386601.jpeg?auto=format&q=60&fit=max&w=930");
             background-size: cover;
             background-repeat: no-repeat;
@@ -33,9 +25,9 @@
             height:20%;
         }
         .titletextbox   {
-            margin: auto;
+            margin-top: 5%;
+            margin-bottom: 5%;
             width:40%;
-            height:40%;
             background-color:white;
             background-position:center;
             border:5px solid black;
@@ -46,11 +38,9 @@
         }
         
         .titletextbox2  {
+            width:100%;
             margin: auto;
-            width:20%;
-            height:40%;
             background-color:white;
-            background-position:center;
             box-shadow: 5px 5px gray;
         }
 
@@ -59,24 +49,20 @@
         }
 
         .section2   {
-            width:90vw;
-            margin:auto 50px;
             padding:10px;
-            background-color: whitesmoke;
         }
         .catimage   {
-            width:20%;
-            float:right; 
             border:5px solid black;
-            margin-left: 8%;
-            margin-right: 4%;
-            margin-top: 4%;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 20%;
             margin-bottom: 4%;
+            width: 80%;
         }
         .bodytextbox {
-            display:block;
+            padding-top:5%;
             line-height:2.0;
-            padding-left:3%;
+            padding-left:10%;
         }
         .hoverexpand {
             transition: font-size 1.5s;
@@ -103,55 +89,75 @@
 
     </style>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 </head>
 
 <body>  
-<div class="section1">
-    <div class="titletextboxpadding">
-
-    </div>
-    <a class="speclinkintro" href="https://hcdigitalscholarship.github.io/summer2021/intro.html" target="_blank">
-    <div class="titletextbox">
-        <h1>DIGITAL SCHOLARSHIP BOOTCAMP 2021</h1>
-        <h2>By: Hikaru Jitsukawa (He/Him)</h2>
-    </div>
-    </a>
-</div>
-<div class="section2"> 
-    <img class="catimage" src="https://raw.githubusercontent.com/hikaru-jitsukawa/DS_bootcamp_2021/main/cat.JPG" alt="A Cat Wearing Sunglasses">
-    <div class="bodytextbox">
-        <h2>
-            About My Project:
-        </h2>
-        <p>
-            This summer, I am working with the Migration Encounters Project, which catalogues the experiences of undocumented immigrants to America who have returned to Mexico. Here is a link to a <a href="https://www.nytimes.com/interactive/2021/01/27/opinion/mexico-deportation-immigration-reform.html" target="_blank" class="hoverexpand">New York Times</a> opinion piece discussing the project, and here is a link to the <a href="https://www.migrationencounters.org/" target="_blank" class="hoverexpand">Migration Encounters</a> webpage.
-        </p>
-        <h2>
-            About Me:
-        </h2>
-        <p>
-            I am currently a rising junior math/ philosophy major at Haverford College. This summer, I am working from my home in Queens, New York.
-        </p>
-        <p>
-            My favorite summer food is Ceviche - though it's not something I get a chance to eat very often. I'm also very much a fan of summer vegetables, especially beefsteak tomatoes and summer squash.
-        </p>
-        <p>
-            To the right, you will find a picture of my cat wearing sunglasses. 
-        </p>
-        </div>
-</div>
-<div class="section3">
-    <div class="titletextboxpadding">
-    </div>
-    <a class="speclink" href="https://github.com/hikaru-jitsukawa" target="_blank">
-        <div class="titletextbox2">
-            <h2>
-                My Github Profile
-            </h2>
+<div class="container-fluid section1">
     
-        </div>
-    </a>
+    <div class="row">
+        <div class="col-sm-2 col-med-3 col-lg-4"></div>
+        <a class="speclinkintro" href="https://hcdigitalscholarship.github.io/summer2021/intro.html" target="_blank"></a>
+            <div class="col-sm-8 col-med-6 col-lg-4 titletextbox">
+                <h1 style="font-family:'Courier New';">DIGITAL SCHOLARSHIP BOOTCAMP 2021</h1>
+                <h2 style="font-family:'Courier New';">By: Hikaru Jitsukawa (He/Him)</h2>
+            </div>
+        </a>
+        <div class="col-sm-2 col-med-3 col-lg-4"></div>
+    </div>
+    
 </div>
+
+<div class="container-fluid"> 
+    <div class="row">
+        <div class="col-sm-0 col-med-1 col-lg-1"></div>
+            
+            <div class="col-sm-8 col-med-7 col-lg-7 bodytextbox" style="background-color: whitesmoke;">
+                <h2 style="font-family:'Courier New';">
+                    About My Project:
+                </h2>
+                <p>
+                    This summer, I am working with the Migration Encounters Project, which catalogues the experiences of undocumented immigrants to America who have returned to Mexico. Here is a link to a <a href="https://www.nytimes.com/interactive/2021/01/27/opinion/mexico-deportation-immigration-reform.html" target="_blank" class="hoverexpand">New York Times</a> opinion piece discussing the project, and here is a link to the <a href="https://www.migrationencounters.org/" target="_blank" class="hoverexpand">Migration Encounters</a> webpage.
+                </p>
+                <h2 style="font-family:'Courier New';">
+                    About Me:
+                </h2>
+                <p>
+                    I am currently a rising junior math/ philosophy major at Haverford College. This summer, I am working from my home in Queens, New York.
+                </p>
+                <p>
+                    My favorite summer food is Ceviche - though it's not something I get a chance to eat very often. I'm also very much a fan of summer vegetables, especially beefsteak tomatoes and summer squash.
+                </p>
+                <p>
+                    Here is a picture of my cat wearing sunglasses. 
+                </p>
+            </div>
+            <div class="col-sm-4 col-med-3 col-lg-3" style="background-color: whitesmoke;">
+                <img class="catimage" src="https://raw.githubusercontent.com/hikaru-jitsukawa/DS_bootcamp_2021/main/cat.JPG" alt="A Cat Wearing Sunglasses">
+            </div>
+        <div class="col-sm-0 col-med-1 col-lg-1"></div>
+    </div>
+</div>
+
+<div class="container-fluid section3">
+    <div class="titletextboxpadding"></div>
+    <div class="row">
+        <div class="col-sm-2 col-med-3 col-lg-4"></div>
+            <div class="col-sm-8 col-med-6 col-lg-4 titletextbox2">
+                <a class="speclink" href="https://github.com/hikaru-jitsukawa" target="_blank">
+                    <h2 style="font-family:'Courier New';">
+                        My Github Profile
+                    </h2>
+                </a>
+            </div>
+        <div class="col-sm-2 col-med-3 col-lg-4"></div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 
 <footer>
